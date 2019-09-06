@@ -13,7 +13,7 @@ else
 	exit 1
 fi
 
-cd /app/deploy
+cd /workspace
 
 rsync --progress -avzh \
 	--exclude='.git/' \

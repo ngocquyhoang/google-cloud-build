@@ -9,7 +9,7 @@ RUN apk update \
 
 COPY docker-entrypoint.sh /script/docker-entrypoint.sh
 
-WORKDIR /app/deploy
+WORKDIR /workspace
 
 ENTRYPOINT ["/bin/sh", "/script/docker-entrypoint.sh"]
 
