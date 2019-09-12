@@ -18,9 +18,6 @@ cd /workspace
 rsync --progress -avzh \
 	--exclude='.git/' \
 	--exclude='.git*' \
-	--exclude='resources/wp-config.php' \
-	--exclude='resources/license.txt' \
-	--exclude='resources/readme.html' \
 	--exclude='cloudbuild.yml' \
 	--exclude='readme.md' \
 	-e "ssh -i /root/.ssh/id_rsa" \
