@@ -44,11 +44,11 @@ then
 
 	ssh -i /root/.ssh/id_rsa \
 		-t $BUILD_USER@$BUILD_HOST \
-		"sudo chmod 775 -R $BUILD_PATH/storage"
+		"sudo chmod 777 -R $BUILD_PATH/storage"
 
 	ssh -i /root/.ssh/id_rsa \
 		-t $BUILD_USER@$BUILD_HOST \
-		"sudo chmod 775 -R $BUILD_PATH/public"
+		"sudo chmod 777 -R $BUILD_PATH/public"
 
 	echo $'\n' "------ CONGRATS! DEPLOY SUCCESSFUL!!! ---------" $'\n'
 	exit 0
