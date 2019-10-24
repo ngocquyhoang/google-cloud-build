@@ -13,7 +13,7 @@ else
 	exit 1
 fi
 
-cd /workspace
+cd /workspace/services/web_app
 
 composer global require hirak/prestissimo
 composer install --no-dev
