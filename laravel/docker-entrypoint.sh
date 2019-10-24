@@ -24,6 +24,7 @@ rsync --progress -avzh \
 	--exclude='cloudbuild.yml' \
 	--exclude='.editorconfig' \
 	--exclude='.styleci.yml' \
+	--exclude='Dockerfile' \
 	--exclude='readme.md' \
 	-e "ssh -i /root/.ssh/id_rsa" \
 	--rsync-path="sudo rsync" . $BUILD_USER@$BUILD_HOST:$BUILD_PATH
